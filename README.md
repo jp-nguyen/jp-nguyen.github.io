@@ -1,5 +1,5 @@
-# jpnguyen.com (I wish)
-This is my personal website. I wish I could get jpnguyen.com but some dude from Texas got it instead. For now, might consider jpnguyen.me as a domain.
+# jp-nguyen.com 
+This is my personal website. I wish I could get jpnguyen.com but some dude from Texas got it instead. jp-nguyen.com will have to do.
 
 # Contents
 - About Me
@@ -30,3 +30,9 @@ This is my personal website. I wish I could get jpnguyen.com but some dude from 
 - Classes
     - lol this is basically just a transcript
 - What am I listening to (Spotify integration?)
+
+# References
+- [Shannon Peng](https://shannonpeng.com/)
+- [Jason Park](https://jasonpark.me/)
+- [Jenny Ha](http://jennha.com/)
+- [Areeta Wong](https://areetawong.com/)

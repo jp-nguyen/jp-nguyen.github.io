@@ -8,36 +8,71 @@ body {
   font-family: 'Raleway', sans-serif
 }
 
-h1 {
-  font-size: 64px;
-}
-
-h2 {
-  font-size: 50px;
-}
-
-h3 {
-  font-size: 45px;
-}
-
-p {
-  font-size: 30px;
+header {
+  margin-top: 47px;
 }
 
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+}
+
+/* For normal desktops */
+@media only screen and (min-width: 769px) {
+  .name {
+    font-size: 64px;
+  } 
+
+  .profile-pic > img {
+    width: 384px;
+    height: 384px;
+    padding: 25px;
+    z-index: 1;
+  }
+
+  .social {
+    font-size: 64px;
+  }
+
+  .categories > li > .btn {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -25px;
+    padding-left: 1.5em;
+  }
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+  .name {
+    font-size: 48px
+  } 
+
+  .profile {
+    flex-direction: column
+  }
+
+  .profile-pic > img {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+  }
+
+  .social {
+    font-size: 48px
+  }
+
+  .categories > li > .btn {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .profile-pic > img {
-  width: 384px;
-  height: 384px;
   border-radius: 50px;
-  padding: 25px;
   background-color: #FFFFFF;
-  z-index: 1;
   transition: opacity 500ms ease-in-out 0ms;
 }
 
@@ -60,7 +95,6 @@ p {
 }
 
 .social {
-  font-size: 64px;
   list-style-type: none;
   padding-left: 0px;
   transition: opacity 120ms ease-in-out 0ms;
@@ -91,15 +125,10 @@ p {
 }
 
 .categories > li > .btn {
-  text-align: left;
   font-size: 24px;
   width: 190px;
   color: #FFFFFF;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: -25px;
   border-radius: 30px;
-  padding-left: 1.5em;
   transition: opacity 120ms ease-in-out 0ms;
 }
 

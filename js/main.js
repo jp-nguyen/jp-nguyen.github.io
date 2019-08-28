@@ -1,10 +1,8 @@
 $(document).ready(function () {
     console.log("Hello!");
-    console.log("This is a WIP! Check here: https://github.com/jp-nguyen/personal-website")
-
+    console.log("This is a WIP: https://github.com/jp-nguyen/personal-website")
 
     // cycle between pictures
-
     var next = 1;
     const numImgs = 4;
 
@@ -15,5 +13,11 @@ $(document).ready(function () {
                 $(next % 2 == 0 ? ".top" : ".bottom").attr("src", "assets/imgs/me" + next + ".jpg");
             }
         );
+    });
+
+    // selected button option
+    $(".categories li .btn").click(function() {
+        $(".selected").removeClass("selected");
+        $(this).addClass("selected");
     });
 });

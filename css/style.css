@@ -93,22 +93,29 @@ p {
 .categories > li > .btn {
   text-align: left;
   font-size: 24px;
-  width: 180px;
+  width: 190px;
   color: #FFFFFF;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: -5px;
+  margin-left: -25px;
+  border-radius: 30px;
+  padding-left: 1.5em;
   transition: opacity 120ms ease-in-out 0ms;
 }
 
-.categories:hover > li > .btn{
+.categories:hover > li > .btn {
   opacity: 0.5
 }
 
-.categories > li > .btn:hover{
+.categories > li > .btn:hover {
   font-weight: bold;
   color: #FFFFFF;
-  opacity: 1
+  opacity: 1;
+}
+
+.categories > li > .btn.selected {
+  font-weight: bold;
+  opacity: 1;
 }
 
 .btn-about {

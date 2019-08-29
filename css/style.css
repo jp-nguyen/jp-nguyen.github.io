@@ -31,27 +31,24 @@ a {
 }
 
 /* For normal desktops */
+
 @media only screen and (min-width: 700px) {
   .main .name {
     font-size: 64px;
-  } 
-
-  .main .profile-pic > img {
+  }
+  .main .profile-pic>img {
     width: 384px;
     height: 384px;
     padding: 25px;
     z-index: 1;
   }
-
   .main .profile {
     flex-direction: row
   }
-
   .main .social {
     font-size: 64px;
   }
-
-  .main .categories > li > .btn {
+  .main .categories>li>.btn {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -61,15 +58,16 @@ a {
 }
 
 /* For mobile */
+
 .name {
   font-size: 48px
-} 
+}
 
 .profile {
   flex-direction: column
 }
 
-.profile-pic > img {
+.profile-pic>img {
   width: 200px;
   height: 200px;
   padding: 15px;
@@ -79,18 +77,18 @@ a {
   font-size: 48px
 }
 
-.categories > li > .btn {
+.categories>li>.btn {
   text-align: center;
   margin-top: 20px;
 }
 
-.profile-pic > img {
+.profile-pic>img {
   border-radius: 50px;
   background-color: #FFFFFF;
   transition: opacity 500ms ease-in-out 0ms;
 }
 
-.profile-pic > img.transparent {
+.profile-pic>img.transparent {
   opacity: 0;
 }
 
@@ -114,11 +112,11 @@ a {
   transition: opacity 120ms ease-in-out 0ms;
 }
 
-.social:hover > .social-item {
+.social:hover>.social-item {
   opacity: 0.5
 }
 
-.social:hover > .social-item:hover {
+.social:hover>.social-item:hover {
   opacity: 1
 }
 
@@ -127,7 +125,7 @@ a {
   transition: opacity 120ms ease-in-out 0ms;
 }
 
-.social-item > a > i {
+.social-item>a>i {
   color: #FFFFFF;
 }
 
@@ -139,7 +137,7 @@ a {
   transition: opacity 120ms ease-in-out 0ms;
 }
 
-.categories > li > .btn {
+.categories>li>.btn {
   font-size: 24px;
   width: 190px;
   color: #FFFFFF;
@@ -147,35 +145,35 @@ a {
   transition: opacity 120ms ease-in-out 0ms;
 }
 
-.categories:hover > li > .btn {
+.categories:hover>li>.btn {
   opacity: 0.5
 }
 
-.categories > li > .btn:hover {
+.categories>li>.btn:hover {
   font-weight: bold;
   color: #FFFFFF;
   opacity: 1;
 }
 
-.categories > li > .btn.selected {
+.categories>li>.btn.selected {
   font-weight: bold;
   opacity: 1;
 }
 
 .color-about {
-  background-color:#EAB757
+  background-color: #EAB757
 }
 
 .color-exp {
-  background-color:#DB162F
+  background-color: #DB162F
 }
 
 .color-proj {
-  background-color:#5F758E 
+  background-color: #5F758E
 }
 
 .color-class {
-  background-color:#383961 
+  background-color: #383961
 }
 
 #sidebar {
@@ -196,7 +194,7 @@ a {
 .description {
   font-size: 24px;
   text-align: left;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 950px) {
@@ -206,13 +204,13 @@ a {
 }
 
 /* Display for Mobile */
+
 @media screen and (max-width: 750px) {
   #sidebar {
     width: 100%;
     height: auto;
     position: relative;
   }
-
   #content {
     margin-left: 0;
   }
@@ -240,7 +238,7 @@ a {
   display: inline
 }
 
-.main  a { 
+.main a {
   color: #FFFFFF;
 }
 
@@ -248,7 +246,6 @@ a {
   .about-item {
     font-size: 20px;
   }
-
   .icon {
     width: 30px
   }

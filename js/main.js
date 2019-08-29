@@ -15,9 +15,6 @@ $(document).ready(function () {
         );
     });
 
-    // selected button option
-    $(".categories li .btn").click(function() {
-        $(".selected").removeClass("selected");
-        $(this).addClass("selected");
-    });
+    // coming soon text
+    $('.coming-soon').html(`<h2><strong>Coming soon!</strong></h2>`);
 });

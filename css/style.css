@@ -12,6 +12,15 @@ header {
   margin-top: 47px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.name:hover {
+  color: #FFFFFF;
+}
+
 .profile {
   display: flex;
   justify-content: center;
@@ -20,22 +29,26 @@ header {
 
 /* For normal desktops */
 @media only screen and (min-width: 769px) {
-  .name {
+  .main .name {
     font-size: 64px;
   } 
 
-  .profile-pic > img {
+  .main .profile-pic > img {
     width: 384px;
     height: 384px;
     padding: 25px;
     z-index: 1;
   }
 
-  .social {
+  .main .profile {
+    flex-direction: row
+  }
+
+  .main .social {
     font-size: 64px;
   }
 
-  .categories > li > .btn {
+  .main .categories > li > .btn {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -45,29 +58,27 @@ header {
 }
 
 /* For mobile */
-@media only screen and (max-width: 768px) {
-  .name {
-    font-size: 48px
-  } 
+.name {
+  font-size: 48px
+} 
 
-  .profile {
-    flex-direction: column
-  }
+.profile {
+  flex-direction: column
+}
 
-  .profile-pic > img {
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-  }
+.profile-pic > img {
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+}
 
-  .social {
-    font-size: 48px
-  }
+.social {
+  font-size: 48px
+}
 
-  .categories > li > .btn {
-    text-align: center;
-    margin-top: 20px;
-  }
+.categories > li > .btn {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .profile-pic > img {
@@ -147,18 +158,52 @@ header {
   opacity: 1;
 }
 
-.btn-about {
+.color-about {
   background-color:#EAB757
 }
 
-.btn-exp {
+.color-exp {
   background-color:#DB162F
 }
 
-.btn-proj {
+.color-proj {
   background-color:#5F758E 
 }
 
-.btn-class {
+.color-class {
   background-color:#383961 
+}
+
+#sidebar {
+  width: 400px;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+#content {
+  margin-left: 400px;
+  padding-left: 47px;
+  padding-right: 47px;
+  overflow: auto;
+}
+
+.description {
+  height: 50px;
+  font-size: 30px;
+  text-align: left;
+}
+
+/* Display for verticalness */
+@media screen and (max-width: 700px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #content {
+    margin-left: 0;
+  }
 }

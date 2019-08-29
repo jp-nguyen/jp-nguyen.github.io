@@ -3,14 +3,6 @@ This is my personal website. I wish I could get jpnguyen.com but some dude from 
 
 # Contents
 - About Me
-- Links
-    - LinkedIn
-    - GitHub
-    - Instagram
-    - Facebook
-    - Spotify
-    - Resume
-    - Mail
 - Experience
     - Technical
         - Amazon
@@ -36,3 +28,8 @@ This is my personal website. I wish I could get jpnguyen.com but some dude from 
 - [Jason Park](https://jasonpark.me/)
 - [Jenny Ha](http://jennha.com/)
 - [Areeta Wong](https://areetawong.com/)
+
+# TODO
+- Scale images for mobile
+- fix image bug
+- create pages for each category

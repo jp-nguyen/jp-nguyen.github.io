@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>J.P. Nguyen</title>
+  <title> About Me | J.P. Nguyen</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -33,7 +33,7 @@
 </head>
 
 <body class="text-center">
-  <div class="container main h-100 d-flex flex-column">
+  <div id="sidebar" class="h-100 d-flex flex-column">
     <header class="mb-auto">
       <a href="index.html">
         <h1 class="name">J.P. Nguyen</h1>
@@ -47,7 +47,7 @@
       </div>
       <ul class="categories">
         <li>
-          <a href="about.html" class="btn btn-lg color-about">About Me</a>
+          <button type="button" class="btn btn-lg color-about selected" disabled>About Me</button>
         </li>
         <li>
           <button type="button" class="btn btn-lg color-exp">Experiences</button>
@@ -96,7 +96,23 @@
       </ul>
     </footer>
   </div>
+  <div id="content" class="color-about h-100 d-flex flex-column">
+    <header class="mb-auto">
+      <h1 class="name">About Me</h1>
+    </header>
+    <div class="main">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus est vel enim cursus commodo. Aliquam
+        porta nibh sed dictum luctus. Aliquam mollis dolor erat, sed feugiat massa tempus a. Phasellus nunc velit,
+        sollicitudin eu nulla at, bibendum malesuada arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Etiam non sem ipsum. Fusce malesuada orci nec orci vestibulum vehicula.
+      </p>
+    </div>
+    <footer class="mt-auto">
+    </footer>
 
+  </div>
+  </div>
 </body>
 
 </html>

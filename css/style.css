@@ -1,3 +1,6 @@
+/***** Global *****/
+
+html,
 body {
   width: 100vw;
   height: 100vh;
@@ -12,77 +15,50 @@ header {
   margin-top: 47px;
 }
 
+header>h1 {
+  font-size: 48px
+}
+
 a {
   color: inherit;
 }
 
-.name {
-  text-decoration: none !important
+a:hover {
+  color: inherit;
 }
 
-.name:hover {
-  color: #FFFFFF
+/* Color Classes */
+
+.color-about {
+  background-color: #EAB757
 }
+
+.color-exp {
+  background-color: #DB162F
+}
+
+.color-proj {
+  background-color: #5F758E
+}
+
+.color-class {
+  background-color: #383961
+}
+
+/* Profile Classes */
 
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* For normal desktops */
-
-@media only screen and (min-width: 700px) {
-  .main .name {
-    font-size: 64px;
-  }
-  .main .profile-pic>img {
-    width: 384px;
-    height: 384px;
-    padding: 25px;
-    z-index: 1;
-  }
-  .main .profile {
-    flex-direction: row
-  }
-  .main .social {
-    font-size: 64px;
-  }
-  .main .categories>li>.btn {
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: -25px;
-    padding-left: 1.5em;
-  }
-}
-
-/* For mobile */
-
-.name {
-  font-size: 48px
-}
-
-.profile {
-  flex-direction: column
+  flex-direction: column;
+  margin: 10px;
 }
 
 .profile-pic>img {
   width: 200px;
   height: 200px;
   padding: 15px;
-}
-
-.social {
-  font-size: 48px
-}
-
-.categories>li>.btn {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.profile-pic>img {
   border-radius: 50px;
   background-color: #FFFFFF;
   transition: opacity 500ms ease-in-out 0ms;
@@ -106,28 +82,7 @@ a {
   position: relative;
 }
 
-.social {
-  list-style-type: none;
-  padding-left: 0px;
-  transition: opacity 120ms ease-in-out 0ms;
-}
-
-.social:hover>.social-item {
-  opacity: 0.5
-}
-
-.social:hover>.social-item:hover {
-  opacity: 1
-}
-
-.social-item {
-  display: inline-block;
-  transition: opacity 120ms ease-in-out 0ms;
-}
-
-.social-item>a>i {
-  color: #FFFFFF;
-}
+/* Categories Classes */
 
 .categories {
   list-style-type: none;
@@ -142,6 +97,8 @@ a {
   width: 190px;
   color: #FFFFFF;
   border-radius: 30px;
+  text-align: center;
+  margin-top: 20px;
   transition: opacity 120ms ease-in-out 0ms;
 }
 
@@ -160,21 +117,64 @@ a {
   opacity: 1;
 }
 
-.color-about {
-  background-color: #EAB757
+/* Social Classes */
+
+.social {
+  font-size: 48px;
+  list-style-type: none;
+  padding-left: 0px;
+  transition: opacity 120ms ease-in-out 0ms;
 }
 
-.color-exp {
-  background-color: #DB162F
+.social:hover>.social-item {
+  opacity: 0.5
 }
 
-.color-proj {
-  background-color: #5F758E
+.social:hover>.social-item:hover {
+  opacity: 1
 }
 
-.color-class {
-  background-color: #383961
+.social-item {
+  display: inline-block;
+  transition: opacity 120ms ease-in-out 0ms;
 }
+
+@media (max-width: 320px) { /* For the iPhone 5/SE */
+  header>h1 {
+    font-size: 36px; 
+  }
+
+  .social {
+    font-size: 36px;
+  }
+}
+
+/***** Index *****/
+
+@media (min-width: 768px) { /* For big displays */
+  .main header>h1 {
+    font-size: 64px;
+  }
+  .main .profile-pic>img {
+    width: 384px;
+    height: 384px;
+    padding: 25px;
+    z-index: 1;
+  }
+  .main .profile {
+    flex-direction: row
+  }
+  .main .social {
+    font-size: 64px;
+  }
+  .main .categories>li>.btn {
+    text-align: left;
+    margin: 10px 0 10px -50px;
+    padding-left: 1.5em;
+  }
+}
+
+/***** Sidebar *****/
 
 #sidebar {
   width: 400px;
@@ -204,7 +204,6 @@ a {
 }
 
 /* Display for Mobile */
-
 @media screen and (max-width: 750px) {
   #sidebar {
     width: 100%;

@@ -1,3 +1,9 @@
+/***** 
+Note:
+  600px, 900px, 1200px, and 1800px 
+  mobile, tablet, tablet landscape and desktop
+*****/
+
 /***** Global *****/
 
 html,
@@ -174,10 +180,11 @@ a:hover {
   }
 }
 
-/***** Sidebar *****/
+/***** Sidebar and Content *****/
 
 #sidebar {
   width: 400px;
+  height: 100%;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -186,34 +193,38 @@ a:hover {
 
 #content {
   margin-left: 400px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px 0;
+  height: 100%;
   overflow: auto;
 }
 
 .description {
   font-size: 24px;
   text-align: left;
-  margin-bottom: 50px;
+  margin: 50px 0 50px;
 }
 
-@media screen and (max-width: 950px) {
+@media (max-width: 600px) { /* For mobile devices */
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  #content {
+    margin-left: 0;
+    height: auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 900px) { /* For tablets */
   .description {
     font-size: 20px;
   }
 }
 
-/* Display for Mobile */
-@media screen and (max-width: 750px) {
-  #sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  #content {
-    margin-left: 0;
-  }
-}
+/***** About *****/
 
 .about-content {
   text-align: left;
@@ -227,25 +238,21 @@ a:hover {
   display: block;
 }
 
-.icon {
+.about-icon {
   width: 50px;
   text-align: center;
   display: inline-block;
 }
 
-.icon-desc {
+.about-icon-desc {
   display: inline
 }
 
-.main a {
-  color: #FFFFFF;
-}
-
-@media screen and (max-width: 700px) {
+@media (max-width: 900px) { /* For tablets */
   .about-item {
     font-size: 20px;
   }
-  .icon {
+  .about-icon {
     width: 30px
   }
 }

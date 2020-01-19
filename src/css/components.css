@@ -1,0 +1,20 @@
+/* Socials Classes */
+.socials {
+  font-size: 48px;
+  list-style-type: none;
+  padding-left: 0px;
+  transition: opacity 120ms ease-in-out 0ms;
+}
+
+.social:hover > .social-item {
+  opacity: 0.5
+}
+
+.social:hover > .social-item:hover {
+  opacity: 1
+}
+
+.social-item {
+  display: inline-block;
+  transition: opacity 120ms ease-in-out 0ms;
+}

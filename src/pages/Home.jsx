@@ -1,24 +1,41 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Socials from "../components/Socials";
 
 import profile from "../assets/imgs/me.jpg";
 import "../css/home.css";
 
+const Button = props => {
+  const { classes, to, text } = props;
+  return (
+    <div className={`button ${classes}`}>
+      <Link style={{ textDecoration: "none" }} to={to}>
+        {text}
+      </Link>
+    </div>
+  );
+};
+
 const Home = () => {
   return (
-    <div>
-      <header>
-        <h1>J.P. Nguyen</h1>
+    <div className="home-container">
+      <header className="home-header">
+        <p className="home-title">J.P. Nguyen</p>
       </header>
-      <div className="profile">
-        <img className="profile-pic" src={profile} alt="profile" />
-      </div>
-      <div className="button-group">
-          <Link to="/about">About Me</Link>
-          <Link to="/experiences">Experiences</Link>
-          <Link to="/projects">Projects</Link>
+      <div className="home-content">
+        <div className="profile">
+          <img className="profile-pic" src={profile} alt="profile" />
+        </div>
+        <div className="button-group">
+          <Button classes="about-color" to="/about" text="About Me" />
+          <Button
+            classes="experiences-color"
+            to="/experiences"
+            text="Experiences"
+          />
+          <Button classes="projects-color" to="/projects" text="Projects" />
+        </div>
       </div>
       <footer className="home-footer">
         <Socials />

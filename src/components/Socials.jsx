@@ -5,7 +5,7 @@ import "../css/components.css";
 const SocialItem = props => {
   const { href, classes } = props;
   return (
-    <li class="social-item">
+    <li className="social-item">
       <a href={href} target="_blank" rel="noopener noreferrer">
         <i className={classes} />
       </a>
@@ -43,7 +43,7 @@ const Socials = () => {
   ];
 
   return (
-    <ul class="socials">
+    <ul className="socials">
       {items.map((item, index) => (
         <SocialItem href={item.href} classes={item.classes} key={index} />
       ))}

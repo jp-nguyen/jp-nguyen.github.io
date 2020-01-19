@@ -1,11 +1,23 @@
+:root {
+  --background-color: #272727;
+  --detail-color: #FFFFFF;
+
+  --about-color: #DEA335;
+  --experiences-color: #D12A3F;
+  --projects-color: #486E98;
+
+  --border-color: var(--detail-color);
+  --font-color: var(--detail-color);
+}
+
 html,
 body {
   width: 100vw;
   height: 100vh;
   margin: 0px;
   padding: 0px;
-  background-color: #272727;
-  color: #FFFFFF;
+  background-color: var(--background-color);
+  color: var(--detail-color);
   font-family: 'Raleway', sans-serif
 }
 
@@ -15,4 +27,16 @@ a {
 
 a:hover {
   color: inherit;
+}
+
+.about-color {
+  background-color: var(--about-color);
+}
+
+.experiences-color {
+  background-color: var(--experiences-color);
+}
+
+.projects-color {
+  background-color: var(--projects-color);
 }

@@ -10,7 +10,6 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Error from "./pages/Error";
 
-
 const App = () => {
   return (
     <div className="app">

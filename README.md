@@ -23,13 +23,8 @@ This is my personal website. I wish I could get jpnguyen.com but some dude from 
     - lol this is basically just a transcript
 - What am I listening to (Spotify integration?)
 
-# References
-- [Shannon Peng](https://shannonpeng.com/)
-- [Jason Park](https://jasonpark.me/)
-- [Jenny Ha](http://jennha.com/)
-- [Areeta Wong](https://areetawong.com/)
-
 # TODO
-- Scale images for mobile
-- fix image bug
-- create pages for each category
+- redesign
+- refactor to React
+- ???
+- profit
